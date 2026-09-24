@@ -1,11 +1,11 @@
 :root {
-  --navy: #102b4e;
-  --blue: #1d5ea8;
-  --blue-soft: #edf4fb;
-  --ink: #172033;
-  --body: #354052;
-  --muted: #697386;
-  --line: #d9e2ec;
+  --navy: #0c3474;
+  --blue: #175aa7;
+  --blue-soft: #f2f6fd;
+  --ink: #182238;
+  --body: #303c50;
+  --muted: #68758a;
+  --line: #d6dfeb;
   --paper: #fff;
   --canvas: #e9eef4;
 }
@@ -65,74 +65,88 @@ body {
 }
 
 .resume {
-  width: min(850px, calc(100% - 28px));
+  width: min(820px, calc(100% - 28px));
   margin: 0 auto 40px;
   overflow: hidden;
   background: var(--paper);
-  box-shadow: 0 14px 45px rgba(16, 43, 78, 0.14);
+  box-shadow: 0 12px 38px rgba(18, 35, 58, 0.12);
 }
 
 .cv-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 38px;
-  padding: 46px 52px 30px;
-  color: #fff;
-  background: linear-gradient(125deg, #0c2544 0%, var(--navy) 62%, #174d84 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 52px 24px;
+  color: var(--ink);
+  background: var(--paper);
+  border-bottom: 2px solid var(--navy);
+}
+
+.identity {
+  width: 100%;
+  text-align: center;
 }
 
 .eyebrow {
-  margin-bottom: 7px;
-  color: #a9cbed;
-  font-size: 10px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.7px;
   text-transform: uppercase;
 }
 
 .cv-header h1 {
-  max-width: 560px;
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
-  font-size: 32px;
+  color: var(--navy);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.6px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
 }
 
 .cv-title {
-  max-width: 570px;
-  margin-top: 10px;
-  color: #d9e8f7;
-  font-size: 14px;
+  max-width: 650px;
+  margin: 8px auto 0;
+  color: var(--body);
+  font-size: 13.5px;
+  font-style: italic;
   line-height: 1.45;
 }
 
 .cv-contact {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 13px;
-  min-width: 190px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px 17px;
+  width: 100%;
+  color: var(--body);
+  font-size: 10.5px;
   font-style: normal;
 }
 
 .cv-contact a {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--body);
   text-decoration: none;
 }
 
 .contact-item {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--body);
 }
 
 .contact-item small {
-  margin-top: 1px;
-  color: #c7daee;
-  font-size: 10px;
+  margin-left: 2px;
+  padding-left: 7px;
+  color: var(--muted);
+  border-left: 1px solid var(--line);
+  font-size: 9.5px;
 }
 
 .cv-contact a:hover span:last-child {
@@ -140,35 +154,34 @@ body {
 }
 
 .contact-label {
-  margin-bottom: 1px;
-  color: #a9cbed;
-  font-size: 9px;
+  color: var(--blue);
+  font-size: 8px;
   font-weight: 700;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 
 .value-strip {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
-  padding: 16px 52px;
-  background: var(--blue-soft);
-  border-bottom: 1px solid #d5e5f5;
+  gap: 7px;
+  padding: 15px 0 13px;
+  background: transparent;
 }
 
 .value-strip span {
-  padding: 4px 10px;
+  padding: 3px 10px;
   color: var(--navy);
-  background: #fff;
-  border: 1px solid #c4d8ec;
+  background: var(--blue-soft);
+  border: 1px solid #bfd2ee;
   border-radius: 999px;
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 9.5px;
+  font-weight: 600;
 }
 
 .resume-body {
-  padding: 32px 52px 25px;
+  padding: 28px 52px 24px;
 }
 
 .cv-section {
@@ -184,10 +197,14 @@ body {
 }
 
 .profile-section h2 {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
   color: var(--navy);
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
-  font-size: 16px;
+  border-bottom: 1px solid #bdcbe0;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 .profile-section p {
@@ -212,10 +229,10 @@ body {
 
 .section-heading h2 {
   color: var(--navy);
-  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
-  font-size: 13px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 11.5px;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
 }
 
@@ -228,15 +245,16 @@ body {
 }
 
 .experience-entry {
-  padding: 17px 18px;
-  background: #f8fafc;
-  border: 1px solid #e1e8f0;
-  border-left: 4px solid var(--blue);
-  border-radius: 4px;
+  padding: 4px 0 13px 15px;
+  background: #fff;
+  border: 0;
+  border-left: 2px solid #91afd7;
+  border-bottom: 1px solid #e0e6ef;
+  border-radius: 0;
 }
 
 .experience-entry + .experience-entry {
-  margin-top: 12px;
+  margin-top: 13px;
 }
 
 .experience-intro {
@@ -250,7 +268,7 @@ body {
 .education-entry h3 {
   margin-bottom: 5px;
   color: var(--ink);
-  font-size: 12.5px;
+  font-size: 12.2px;
   font-weight: 700;
 }
 
@@ -297,7 +315,7 @@ body {
   justify-content: space-between;
   gap: 24px;
   padding-left: 15px;
-  border-left: 3px solid var(--blue);
+  border-left: 2px solid #91afd7;
 }
 
 .education-entry p {
@@ -352,19 +370,19 @@ body {
 .cv-footer {
   display: flex;
   justify-content: center;
-  padding: 13px 52px;
-  color: #dbe8f5;
-  background: var(--navy);
-  font-size: 9px;
+  margin: 0 52px;
+  padding: 12px 0 16px;
+  color: var(--navy);
+  background: #fff;
+  border-top: 2px solid var(--navy);
+  font-size: 8.5px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 
 @media (max-width: 720px) {
   .cv-header {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 36px 28px 26px;
+    padding: 36px 28px 22px;
   }
 
   .cv-header h1 {
@@ -372,11 +390,9 @@ body {
   }
 
   .cv-contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 8px 14px;
   }
 
-  .value-strip,
   .resume-body {
     padding-right: 28px;
     padding-left: 28px;
@@ -395,7 +411,20 @@ body {
   }
 
   .cv-contact {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item small {
+    display: block;
+    margin: 2px 0 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .cv-footer {
+    margin-right: 28px;
+    margin-left: 28px;
   }
 
   .education-entry {
@@ -446,8 +475,9 @@ body {
   }
 
   .cv-header {
-    gap: 20px;
-    padding: 9mm 10mm 6mm;
+    gap: 0;
+    padding: 7mm 10mm 4mm;
+    border-bottom-width: 1.5px;
   }
 
   .eyebrow {
@@ -465,18 +495,23 @@ body {
   }
 
   .cv-contact {
-    gap: 7px;
-    min-width: 42mm;
-    font-size: 7.5pt;
+    gap: 3px 10px;
+    width: 100%;
+    min-width: 0;
+    font-size: 6.8pt;
   }
 
   .contact-label {
-    font-size: 6pt;
+    font-size: 5.5pt;
+  }
+
+  .contact-item small {
+    font-size: 6.2pt;
   }
 
   .value-strip {
     gap: 4px;
-    padding: 3mm 10mm;
+    padding: 2.5mm 0 2mm;
   }
 
   .value-strip span {
@@ -497,7 +532,8 @@ body {
 
   .profile-section h2 {
     margin-bottom: 3px;
-    font-size: 9.5pt;
+    padding-bottom: 2px;
+    font-size: 8.2pt;
   }
 
   .profile-section p {
@@ -514,7 +550,7 @@ body {
   }
 
   .experience-entry {
-    padding: 8px 9px;
+    padding: 3px 0 6px 7px;
   }
 
   .experience-intro {
@@ -554,7 +590,8 @@ body {
   }
 
   .cv-footer {
-    padding: 2.5mm 10mm;
+    margin: 0 10mm;
+    padding: 2.5mm 0;
     font-size: 6pt;
   }
 
